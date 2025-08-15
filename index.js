@@ -15,20 +15,16 @@ app.use(express.static(path.join(__dirname, "public")));
 let posts = [
     {
         id: uuidv4(),
-        username: "sumit",
-        content: "I love coding",
+        username: "Rahul",
+        content: "What are some effective ways to stay consistent while learning coding as a beginner?",
     },
     {
         id: uuidv4(),
-        username: "Amith",
-        content: "I love building Buildings",
-    },
-    {
-        id: uuidv4(),
-        username: "Virat",
-        content: "I love playing Cricket",
+        username: "Ananya",
+        content: "Why do some people find it easier to wake up early, and how can night owls change their routine?",
     },
 ];
+
 
 // ✅ Root route
 app.get("/", (req, res) => {
